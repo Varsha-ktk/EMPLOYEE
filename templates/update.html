@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>create</h1>
+<form method="POST">
+    {% csrf_token %}
+
+{{form}}
+    <button type="submit" class="btn btn-primary">update</button>
+
+</form>
+
+{% endblock %}
